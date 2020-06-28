@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="index.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 1</title>
+  </head>
+  <body>
+    <div class="navBar">
+      <div class="navButtons">
+        <div class="verLine"></div>
+        <p class="dot"></p>
+        <p>NETEL</p>
+      </div>
+      <div class="navButtons">
+        <p class="navButton">Home</p>
+        <p class="navButton">About Us</p>
+        <p class="navButton">Portfolio</p>
+        <p class="navButton">Contact</p>
+      </div>
+    </div>
+    <div class="slidePics">
+      <img
+        class="slidePic"
+        src="./images/BG.jpg"
+        
+      />
+    </div>
+    <div class="boxes">
+      <div class="orangeBox">
+        <img src="./images/laptop.png"  />
+        <h2>Responsive</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+          nonummy nibh euismod tincidunt ut laoreet.
+        </p>
+      </div>
+      <div class="greenBox">
+        <img src="./images/phone.png"  />
+        <h2>Easy To Use</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+          nonummy nibh euismod tincidunt ut laoreet.
+        </p>
+      </div>
+      <div class="yellowBox">
+        <img src="./images/rescue.png"  />
+        <h2>Quick Support</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+          nonummy nibh euismod tincidunt ut laoreet.
+        </p>
+      </div>
+    </div>
+    <div class="startupBusiness">
+      <img src="./images/about-img.jpg"  />
+      <div>
+        <h2>Startup Business</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+          nonummy nibh euismod tincidunt ut laoreet. Dolore magna aliquam erat
+          volutpat. Lorem ipsum dolor sit amet.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+          nonummy nibh euismod tincidunt ut laoreet. Dolore magna aliquam erat
+          volutpat.
+        </p>
+        <br /><br />
+        <a href="about.html" class="btn btn-default">LEARN MORE</a>
+      </div>
+    </div>
+    <div class="recentProjects">
+      <h2>Recent Projects</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+        nonummy nibh euismod tincidunt ut laoreet. Dolore magna aliquam erat
+        volutpat.
+      </p>
+      <div class="projectsImgs">
+        <img
+          src="./images/portfolio-img1.jpg"
+          onclick="openModal(); currentSlide(1)"
+          
+        />
+        <img
+          src="./images/portfolio-img2.jpg"
+          onclick="openModal();currentSlide(2)"
+          
+        />
+        <img
+          src="./images/portfolio-img3.jpg"
+          onclick="openModal();currentSlide(3)"
+          
+        />
+        <img
+          src="./images/portfolio-img4.jpg"
+          onclick="openModal();currentSlide(4)"
+          
+        />
+        <img
+          src="./images/portfolio-img5.jpg"
+          onclick="openModal();currentSlide(5)"
+          
+        />
+        <img
+          src="./images/portfolio-img6.jpg"
+          onclick="openModal();currentSlide(6)"
+          
+        />
+        <img
+          src="./images/portfolio-img7.jpg"
+          onclick="openModal();currentSlide(7)"
+          
+        />
+        <img
+          src="./images/portfolio-img8.jpg"
+          onclick="openModal();currentSlide(8)"
+          
+        />
+      </div>
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+          <div class="mySlides">
+            <img src="./images/portfolio-img1.jpg" style="width: 100%;" />
+          </div>
+
+          <div class="mySlides">
+            <img src="./images/portfolio-img2.jpg" style="width: 100%;" />
+          </div>
+
+          <div class="mySlides">
+            <img src="./images/portfolio-img3.jpg" style="width: 100%;" />
+          </div>
+
+          <div class="mySlides">
+            <img src="./images/portfolio-img4.jpg" style="width: 100%;" />
+          </div>
+
+          <div class="mySlides">
+            <img src="./images/portfolio-img5.jpg" style="width: 100%;" />
+          </div>
+
+          <div class="mySlides">
+            <img src="./images/portfolio-img6.jpg" style="width: 100%;" />
+          </div>
+
+          <div class="mySlides">
+            <img src="./images/portfolio-img7.jpg" style="width: 100%;" />
+          </div>
+
+          <div class="mySlides">
+            <img src="./images/portfolio-img8.jpg" style="width: 100%;" />
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+      </div>
+      <br /><br />
+      <br /><br />
+      <a href="#">View More</a>
+    </div>
+  </body>
+</html>

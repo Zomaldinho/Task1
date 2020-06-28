@@ -1,0 +1,241 @@
+body{
+  margin: 0;
+  background-color: black;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#kolo{
+  display: flex;
+  flex-direction: column;
+}
+
+.verLine{
+  border-left: 6px solid palevioletred;
+  margin: 0 5px 0 0;
+}
+
+.dot{
+  height: 18px;
+  width: 18px;
+  background-color: palevioletred;
+  border-radius: 50%;
+  display: inline-block;
+  margin: auto 5px auto 0;
+}
+
+span{
+  color: white;
+}
+
+p{
+  color: white;
+}
+
+h2{
+  color: white;
+}
+
+.navBar{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  background-color: #272727;
+  width: 80%;
+  margin: 10px auto;
+  /* align-items: center; */
+  /* position: absolute; */
+  /* z-index: 0; */
+  /* left: 10%; */
+}
+
+.navButtons{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.navButton{
+  margin: 0;
+  line-height: 34px;
+  padding: 0.5rem;
+  cursor: pointer;
+  font-family: 'Lucida Calligraphy',cursive;
+}
+.navButton:hover{
+  background-color: #6A6A6A;
+  transition: all 0.8s ease-in-out;
+}
+
+
+.slidePic{
+  width: 100%;
+  height: auto;
+  /* position: absolute; */
+  z-index: -1;
+  top:40px;
+  left: 0px;
+}
+
+.boxes{
+  width: 80%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin: auto auto 20px auto;
+  /* height: 100px; */
+}
+
+.orangeBox{
+  background-color: #D87A45;
+  width: 30%;
+  height: 90%;
+}
+
+.greenBox{
+  background-color: #45D8B9;
+  width: 30%;
+  height: 90%;
+}
+
+.yellowBox{
+  background-color: #D1BF41;
+  width: 30%;
+  height: 90%;
+}
+
+.orangeBox > img{
+  height: 100px;
+  width: auto;
+  padding: 5px;
+}
+
+.greenBox > img{
+  padding: 5px;
+  height: 100px;
+  width: auto;
+}
+
+.yellowBox > img{
+  padding: 5px;
+  height: 100px;
+  width: auto;
+}
+
+.startupBusiness{
+  width: 80%;
+  margin: auto auto 20px auto;
+  display: flex;
+  flex-flow: row wrap;
+  background-color: #272727;
+}
+
+.startupBusiness > img{
+  width: 50%;
+  height: auto;
+}
+
+.startupBusiness > div{
+  padding: 20px;
+  width: 40%;
+  text-align: left;
+}
+
+a{
+  text-decoration: none;
+  border: 2px solid white;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.recentProjects{
+  width: 80%;
+  margin: auto auto 20px auto;
+}
+
+.projectsImgs{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.projectsImgs > img{
+  width: 25%;
+  height: auto;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev{
+  left: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
